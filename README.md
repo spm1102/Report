@@ -50,13 +50,13 @@ short d;
         <br>
         Example:
 
-        ![alt text](image.png)
+        ![alt text](image-7.png)
 
     - **Explicit type conversion\:**
       - Also called type casting and it is user-defined. 
       - The user can typecast the result to make it of a particular data type.
   
-       ![alt text](image-1.png)
+       ![alt text](image-8.png)
 
 - **Advantages\:**
   - **Type safety\:** ensure that data is being stored and processed in the correct data type, avoiding potential type mismatches and type errors.
