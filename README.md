@@ -232,7 +232,7 @@ short d;
     ```
 
   In stack\:
-  ![alt text](image-4.png)
+ ![alt text](image-6.png)
   
 - **Memory address\:**
   - **Virtual memory\:** allows each process to have its own virtual memory address space. The virtual memory addresses are mapped to physical memory by the operating system, allowing processes to use more memory than physically available
@@ -527,13 +527,13 @@ short d;
     ```
     - Monodimensional array is stored in sequential order in the memory\:
   
-      ![alt text](image-5.png)
+      ![alt text](image-4.png)
   - **Multidimensional array\:** is an array of arrays, where each elements of the main array is itself an array. Common examples is two-dimensional arrays with application to matrices, tables. Multidimensional arrays can be used like images, game boards,...
     ```c
     int matrix[10][10]// a matrix of 10 cols and 10 rows
     ```
     - Two-dimensional array is stored in memory as a contuguous block of rows, where each row itself is a contiguous block of elements. In memory, rows are stored one after another, forming a rectangular grid-like structure.
-      ![alt text](image-6.png)
+     ![alt text](image-5.png)
 - **Array initializations\:**
   - **Direct initialization\:**
       For example\:
@@ -648,6 +648,7 @@ short d;
 - `-Wall`\: Enables almost all warning messages. It's a good practice to use this flag to catch potential issues in the code.
  This flag has an extension, it is `-Wextra` 
  <br>
+
 - `-Werror`\: treats all warning messages as errors. Compilation will fail if any warnings are generated.
   <br>
 - `-Wfloat-equal`  warning option in GCC that generates a warning when floating-point numbers are compared for equality using the equality operator (`==`)
@@ -656,26 +657,37 @@ short d;
   <br> 
 - `Wshadown` warn whenever a local variable shadows another local variable, parameter or global variable or whenever a built-in function is shadowed.
 <br>
+
 - `-fmudflap`\: runtime bounds checking for C and C++ programs.
 <br>
+
 - `-Wundef`: warn if an uninitialized identifier is evaluated in an #if directive.
 <br>
+
 - `-Wpointer-arith`: warn if anything depends upon the size of a function or of void.
 <br>
+
 - `-Wcast-align`: warn whenever a pointer is cast such that the required alignment of the target is increased. For example, warn if a `char *` is cast to an `int *` on machines where integers can only be accessed at two- or four-byte boundaries.
 <br>
+
 - `-Wstrict-prototypes`: warn if a function is declared or defined without specifying the argument types.
 <br>
+
 - `-Wstrict-overflow`: warns about cases where the compiler optimizes based on the assumption that signed overflow does not occur. 
 <br>
+
 - `-Wwrite-strings`: give string constants the type `const char[length]` so that copying the address of one into a `non-const char *` pointer will get a warning.
 <br>
+
 - `-Waggregate-return`: warn if any functions that return structures or unions are defined or called.
 <br>
+
 - `-Wcast-qual`: warn whenever a pointer is cast to remove a type qualifier from the target type.
 <br>
+
 - `-Wswitch-enum`: warn whenever a switch statement has an index of enumerated type and lacks a case for one or more of the named codes of that enumeration.
 <br>
+
 - `-Wunreachable-code`: warn if the compiler detects that code will never be executed.
 <br>
   
