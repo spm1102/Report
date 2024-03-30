@@ -49,11 +49,15 @@ short d;
          bool $\to$ char $\to$ short int $\to$ int $\to$ unsigned int $\to$ long $\to$ unsigned $\to$ long long $\to$ float $\to$ double $\to$ long double.
         <br>
         Example:
+
         ![alt text](image.png)
+
     - **Explicit type conversion\:**
       - Also called type casting and it is user-defined. 
       - The user can typecast the result to make it of a particular data type.
+  
        ![alt text](image-1.png)
+
 - **Advantages\:**
   - **Type safety\:** ensure that data is being stored and processed in the correct data type, avoiding potential type mismatches and type errors.
   - **Improved code readability\:** making the intent of your code clearer and easier to understand by explicitly converting data between different types.
@@ -232,6 +236,7 @@ short d;
     ```
 
   In stack\:
+
  ![alt text](image-6.png)
   
 - **Memory address\:**
@@ -533,6 +538,7 @@ short d;
     int matrix[10][10]// a matrix of 10 cols and 10 rows
     ```
     - Two-dimensional array is stored in memory as a contuguous block of rows, where each row itself is a contiguous block of elements. In memory, rows are stored one after another, forming a rectangular grid-like structure.
+
      ![alt text](image-5.png)
 - **Array initializations\:**
   - **Direct initialization\:**
