@@ -7,7 +7,7 @@
   - [**4. Variable address**](#4-variable-address)
   - [**5. Function addresses**](#5-function-addresses)
   - [**6. Function in C**](#6-function-in-c)
-  - [**7.Array**](#7array)
+  - [**7. Array**](#7-array)
   - [**8. How C works**](#8-how-c-works)
   - [**9. Clean code**](#9-clean-code)
   - [**10. Common GCC flag**](#10-common-gcc-flag)
@@ -367,24 +367,7 @@ short d;
       }
       ```
     - **Dynamic Function Loading\:** return pointers to dynamically loaded functions, allowing users to call them directly.
-      <Actually I do not really understand this code>
-      ```c
-      #include<stdio.h>
-      #include<dlfcn.h>
-
-      int main(){
-        void(*func)() = NULL;
-        void *handle = dlopen("libmylibrary.so", RTLD_LAZY);
-        if (handle){
-          func = (void(*)())dlsym(handle, "myFunction");
-          if(func){
-            func();
-          }
-          d
-        }
-        return 0;
-      }
-      ```
+      <Actually I do not really understand this kind>
 
 ## **6. Function in C**
 - **Deinition\:** a function is a block  of code which only runs when it is called. It can also be used many times once defined.
@@ -515,7 +498,7 @@ short d;
         // Continue processing input
     }
     ```
-## **7.Array**
+## **7. Array**
 - **Definition\:** arrays are collections of elements of the same data type stored in continuous memory locations. They provide a way to store multiple values of the same type under a single name. The size of arrays are always pre-declared before the compile time.
 - **Declaration\:** 
   ```c
